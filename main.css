@@ -1,0 +1,131 @@
+body { 
+	font-family: 'Cardo', serif; 
+	font-size: 100%;
+	color: #808080;
+	overflow: hidden; 
+	background-color: #272727;
+}
+img { 
+	margin-left: 1px;
+	margin-top: 1px;
+	display: block; 
+	z-index: 10;
+	position: absolute;
+}
+img#nextimage {
+	margin-top:-400px;
+	z-index: 9;
+}
+header { 
+	display: block;
+	width: 100%;
+	text-align: right;
+}
+nav {
+	float: left;
+	margin-top: 50px;
+}
+nav#primary_menu {
+	width: 70px;
+}
+nav#primary_menu_mouseover {
+	width: 230px;
+	position: relative;
+	z-index: 2;
+}
+ul#primary_menu_mouseover_bar, #primary_menu_mouseover_text {
+	float:left;
+}
+nav#secondary_menu {
+	width: 230px;
+	margin-left: -230px; 
+	position: relative; 
+	z-index: 3;	
+}
+ul {
+	list-style: none;
+	margin: 0 0 0 0;
+	padding: 0;
+}
+ul#portfolio_menu {
+	margin-left: 30px;
+	width: 120px;
+	float: left;
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+footer {
+	position: absolute; 
+	bottom: 0; 
+	height: 67px;
+	width: 100%; 
+	text-align: center; 
+	background-image: url('copyright_bg.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+p {
+	margin: 0 0 5px 0;
+}
+p.name {
+	float: left;
+	width: 30px;
+	margin-right: 5px;
+}
+li.first { margin-bottom: 75px; }
+a, a:visited {
+	color: #808080;
+	text-decoration: none;
+}
+#imgbg {
+	display: block; 
+	border: 1px dotted #808080; 
+	position: relative; 
+	z-index: 1; 
+	margin-top: -402px;
+}
+#contentbox {
+	width: 602px;
+	height: 402px;
+	float:left;
+}
+#maincontent {
+	width: 602px;
+	height: 402px;
+	position: relative;
+}
+#about_box {
+	margin-right: 15px;
+	margin-left: -70px;
+	margin-bottom: 100px;
+	float: left;
+	position: relative;
+	z-index: 4;
+}
+#about_firstline {
+	margin-top: 50px;
+	margin-bottom: 55px;
+}
+.dark {
+	color: #808080;
+}
+.black {
+	color: #000000;
+}
+.divider {
+	margin: 0 3px 0 3px;
+	font-size: 120%;
+	vertical-align: top;
+}
+.light, nav#secondary_menu, p.value, a.light, a.light:visited {
+	color: #cccccc;
+}
+.hidden {
+	display: none;
+}
+.copyright {
+	font-size: 80%;
+	margin-top: 28px;
+}

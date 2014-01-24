@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>tairan zhang | photography</title>
+	<script src="modernizr.js"></script>
+	<script src="jquery-1.10.2.min.js"></script>
+	<script src="main.js"></script>
+	<!--[if lt IE 9]>
+	<script>
+		var e = ("abbr,article,aside,audio,canvas,datalist,details," +
+	 		"figure,footer,header,hgroup,mark,menu,meter,nav,output," +
+	    	"progress,section,time,video").split(',');
+	  	for (var i = 0; i < e.length; i++) {
+	    	document.createElement(e[i]);
+		}
+	</script>
+	<![endif]-->
+	<!--[if IE]><script type="text/javascript" src="excanvas.compiled.js"></script><![endif]-->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div style="width: 902px; margin-left: auto; margin-right: auto; margin-top: 50px; padding-right: 15px; padding-left: 15px;">
+	<header style="margin-bottom: 10px;">
+		<span>tairan zhang</span> <span class="black divider">|</span> <span class="light">photography</span>
+	</header>
+	<nav id="primary_menu">
+		<ul>
+			<li class="first"><a id="portfolio_button" href="#portfolio"><span>portfolio</span></a></li>
+			<li><a id="about_button" href="#about"><span>about</span></a></li>
+			<li><a id="contact_button" href="mailto:tai@dekaliber.net"><span>contact</span></a></li>
+		</ul>
+	</nav>
+	<nav id="primary_menu_mouseover">
+		<ul id="primary_menu_mouseover_bar" style="width: 15px;">
+			<li id="portfolio_bar" class="first black">|</li>
+			<li id="about_bar" class="black">|</li>
+			<li id="contact_bar" class="black">|</li>
+		</ul>
+		<ul id="primary_menu_mouseover_text">
+			<li id="portfolio_mouseover" class="first light">selected works</li>
+			<li id="about_mouseover" class="light">411</li>
+			<li id="contact_mouseover" class="light">send an e-mail</li>
+		</ul>
+	</nav>
+	<nav id="secondary_menu"> <!-- this serves as the placeholder between the main menu and image by default -->
+		<ul id="portfolio_menu" class="hidden">
+			<li><a id="gl_faces" href="#" class="light">faces and figures</a></li>
+			<li><a id="gl_lightplay" href="#" class="light">lightplay</a></li>
+			<li><a id="gl_ditl" href="#" class="light">a day in the life</a></li>
+			<li><a id="gl_places" href="#" class="light">places</a></li>
+		</ul>
+		<ul id="portfolio_menu_mousover" style="position: absolute; left: 150px; top:0px;" class="dark">
+			<li id="gl_faces_mo"><span>//</span> view</li>
+			<li id="gl_lightplay_mo"><span>//</span> view</li>
+			<li id="gl_ditl_mo"><span>//</span> view</li>
+			<li id="gl_places_mo"><span>//</span> view</li>
+		</ul>
+	</nav>
+	<div id="contentbox">
+		<div id="maincontent">
+			<div id="preload" style="position: absolute; width: 602px; height: 18px; background-image: url('image_bg.png'); z-index: 1;"></div>
+			<img id="image" src="main_image.jpg" />	<!-- main image -->
+			<!--<canvas id="imgbg" width="600" height="400"></canvas>-->	<!-- main image background -->
+			
+			<div id="image_nav" style="float:left; margin-top: 410px;" class="hidden">
+				<a href="#" id="prev" class="light">previous</a>
+				<span id="image_nav_bar" class="black divider">|</span> 
+				<a href="#" id="next" class="light">next</a>
+			</div>
+			<div id="gallery_info" style="float:right; margin-top: 410px;" class="light hidden">
+				<span id="gallery_title" class="dark">faces and figures</span> 
+				<span id="gallery_info_bar" class="black divider">|</span> 
+				<span id="current_image">1</span><span id="total_images">/14</span>
+			</div>
+		</div>
+		<div id="aboutcontent" class="hidden">
+			<canvas id="about_box" width="55" height="95"></canvas>
+			<p id="about_firstline">
+				<span id="about_city">los angeles</span> 
+				<span id="about_location_bar" class="black divider">|</span> 
+				<span id="about_country" class="light">usa</span>
+			</p>
+			<p id="about_ph" class="name">ph</p><p id="about_phone" class="value">508 479 0398</p>
+			<p id="about_em" class="name">em</p><p id="about_email" class="value">tai@dekaliber.net</p>
+		</div>
+	</div>
+</div>
+
+<!--
+<script type="text/javascript">
+	var so = new SWFObject("main.swf", "main", "900", "500", "8", "#272727");
+	so.addParam("menu", "false");
+	so.addParam("quality", "high");
+	so.write("flashcontent");
+</script>
+-->
+<footer>
+	<div class="copyright">&copy; 2013 tairan zhang <span class="black">|</span> <span class="light">all rights reserved</span> 
+	<span class="black">|</span> design by <a href="http://www.dekaliber.net/" target="_blank">dekaliber.net</a></div>
+</footer>
+
+</body>
+</html>
